@@ -36,7 +36,7 @@
     <script>
       var handleLogin = function () {
         var username = document.getElementById('username').value;
-        document.cookie = 'username=' + username;
+        document.cookie = 'username=' + username+';SameSite=None; Secure';
       }
       var handleLogOut = function () {
         document.cookie = 'username=; Max-Age=0'
